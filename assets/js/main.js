@@ -1,8 +1,23 @@
 /*==================== SHOW MENU ====================*/
 
+const showMenu = (toggleId, navId) =>{      //1er. param. el elem. con el event; 2do param. el elem. HTML al cual se agrega la clase show-menu
+    const toggle = document.getElementById(toggleId),
+    nav = document.getElementById(navId);
+
+    // Validate that variables exist
+    if(toggle && nav){
+        toggle.addEventListener('click', ()=>{
+            // We add the show-menu class to the div tag with the nav__menu class
+            nav.classList.toggle('show-menu')
+        })
+    }
+}
+
+// llamada la funcion que agrega la clase show-menu al div de nav__menu permitiendo cambiar la regla bottom del css 
+// del menu, para mostrarlo.  
+showMenu('nav-toggle', 'nav-menu');
 
 /*==================== REMOVE MENU MOBILE ====================*/
-
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 
