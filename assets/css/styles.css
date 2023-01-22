@@ -112,7 +112,7 @@ img{
 
 .bd-grid {
   display: grid;
-  gap: 1.5rem;
+  gap: 1.45rem;
 }
 
 .l-header {
@@ -194,14 +194,70 @@ img{
 }
 
 /* Active menu link */
-
 .active-link-highlight {
-  color: black;
+  color: var(--title-color);
 }
 
 /*========== HOME ==========*/
+.home {
+  position: relative;
+}
 
+.home__container {
+  gap: 2.5rem;
+}
 
+.home__data {
+  gap: 0.5rem;
+  text-align: center;
+}
+
+.home__img {
+  width: 150px;
+  height: 175px;
+  border-radius: 45%;
+  justify-self: center;
+  margin-bottom: var(--mb-1);
+}
+
+.home__title {
+  font-size: var(--h1-font-size);
+}
+
+.home_profession {
+  font-size: var(--normal-font-size);
+  margin-bottom: var(--mb-1);
+}
+
+.home_addres {
+  gap: 1rem;
+}
+
+.home__information {
+  display: flex;
+  align-items: center;
+  font-size: var(--small-font-size);
+}
+
+.home__icon {
+  font-size: 1.3rem;
+  margin-right: .25rem;
+}
+
+.home__buttom-movil {
+  display: inline-block;
+  border: 2px solid var(--text-color);
+  color: var(--title-color);
+  padding: 1rem 2rem;
+  border-radius: .25rem;
+  transition: .3s;
+  font-weight: var(--font-medium);
+}
+
+.home__buttom-movil:hover {
+  background-color: var(--text-color);
+  color: var(--container-color)
+}
 /*========== SOCIAL ==========*/
 
 

@@ -1,140 +1,154 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Iconos Boxicons -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
 
     <!-- Hoja css -->
     <link rel="stylesheet" href="assets/css/styles.css" />
 
     <title>Curriculum Vitae Responsive</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <!--========== HEADER ==========-->
     <header class="l-header" id="header">
-      <nav class="nav bd-conteiner">
-        <a href="#" class="nav__logo">Zini</a>
+        <nav class="nav bd-conteiner">
+            <a href="#" class="nav__logo">Zini</a>
 
-        <div class="nav__menu" id="nav-menu">
-          <ul class="nav__list">
-            <li class="nav_item">
-              <a href="#home" class="nav__link">
-                <i class="bx bx-home-circle nav__icon"></i>Home
-              </a>
-            </li>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav_item">
+                        <a href="#home" class="nav__link">
+                            <i class="bx bx-home-circle nav__icon"></i>Home
+                        </a>
+                    </li>
 
-            <li class="nav_item">
-              <a href="#profile" class="nav__link">
-                <i class="bx bx-user-circle nav__icon"></i>Profile
-              </a>
-            </li>
+                    <li class="nav_item">
+                        <a href="#profile" class="nav__link">
+                            <i class="bx bx-user-circle nav__icon"></i>Profile
+                        </a>
+                    </li>
 
-            <li class="nav_item">
-              <a href="#education" class="nav__link">
-                <i class="bx bxs-book-bookmark nav__icon"></i>Education
-              </a>
-            </li>
+                    <li class="nav_item">
+                        <a href="#education" class="nav__link">
+                            <i class="bx bxs-book-bookmark nav__icon"></i>Education
+                        </a>
+                    </li>
 
-            <li class="nav_item">
-              <a href="#skills" class="nav__link">
-                <i class="bx bx-receipt nav__icon"></i>Skills
-              </a>
-            </li>
+                    <li class="nav_item">
+                        <a href="#skills" class="nav__link">
+                            <i class="bx bx-receipt nav__icon"></i>Skills
+                        </a>
+                    </li>
 
-            <li class="nav_item">
-              <a href="#experience" class="nav__link">
-                <i class="bx bx-briefcase nav__icon"></i>Experience
-              </a>
-            </li>
+                    <li class="nav_item">
+                        <a href="#experience" class="nav__link">
+                            <i class="bx bx-briefcase nav__icon"></i>Experience
+                        </a>
+                    </li>
 
-            <li class="nav_item">
-              <a href="#certificates" class="nav__link">
-                <i class="bx bx-award nav__icon"></i>Certificates
-              </a>
-            </li>
+                    <li class="nav_item">
+                        <a href="#certificates" class="nav__link">
+                            <i class="bx bx-award nav__icon"></i>Certificates
+                        </a>
+                    </li>
 
-            <li class="nav_item">
-              <a href="#references" class="nav__link">
-                <i class="bx bx-extension nav__icon"></i>References
-              </a>
-            </li>
-          </ul>
-        </div>
+                    <li class="nav_item">
+                        <a href="#references" class="nav__link">
+                            <i class="bx bx-extension nav__icon"></i>References
+                        </a>
+                    </li>
+                </ul>
+            </div>
 
-        <div class="nav__toggle" id="nav-toggle">
-          <i class="bx bx-grid-alt"></i>
-        </div>
-      </nav>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="bx bx-grid-alt"></i>
+            </div>
+        </nav>
     </header>
 
     <main class="l-main bd-container">
-      <!-- Todos los elementos apartir de este div se generará en el PDF -->
-      <div class="resume" id="area-cv">
-        <div class="resume__left">
-          <!--========== HOME ==========-->
-          <section class="home" id="home">
-            <!-- Theme change button  -->
-            <p>
-              asdasd Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Corrupti ipsum iure voluptatibus rem amet, distinctio illo
-              perspiciatis vitae, minus, temporibus excepturi nulla! Odio vero
-              beatae id est earum, iste placeat? asdasd Lorem ipsum dolor sit
-              amet, consectetur adipisicing elit. Corrupti ipsum iure
-              voluptatibus rem amet, distinctio illo perspiciatis vitae, minus,
-              temporibus excepturi nulla! Odio vero beatae id est earum, iste
-              placeat? asdasd Lorem ipsum dolor sit amet, consectetur
-              adipisicing elit. Corrupti ipsum iure voluptatibus rem amet,
-              distinctio illo perspiciatis vitae, minus, temporibus excepturi
-              nulla! Odio vero beatae id est earum, iste placeat?
-            </p>
+        <!-- Todos los elementos apartir de este div se generará en el PDF -->
+        <div class="resume" id="area-cv">
+            <div class="resume__left">
+                <!--========== HOME ==========-->
 
-            <!-- Button to generate and download the pdf. Available for desktop. -->
-          </section>
+                <section class="home" id="home">
+                    <div class="home__container section bd-grid">
+                        <div class="home__data bd-grid">
+                            <img src="assets/img/profile.jpg" alt="profile-image" class="home__img" />
 
-          <!--========== SOCIAL ==========-->
-          <section class="social section">
-            <p>social</p>
-          </section>
+                            <h1 class="home__title">Zini <b>Franco Joaquin</b></h1>
+                            <h3 class="home__profession">Web developer</h3>
 
-          <!--========== PROFILE ==========-->
-          <section class="profile section" id="profile">
-            <p>profile</p>
-          </section>
+                            <div>
+                                <a download="" href="assets/pdf/ResumeCv.pdf" class="home__buttom-movil">Download</a>
+                            </div>
+                        </div>
 
-          <!--========== EDUCATION ==========-->
-          <section class="education section" id="education">
-            <p>education</p>
-          </section>
+                        <div class="home__address bd-grid">
+                            <span class="home__information">
+                                <i class='bx bx-map home__icon'></i> Corrientes - Argentina
+                            </span>
 
-          <!--========== SKILLS  ==========-->
-          <section class="skills section" id="skills">
-            <p>skilss</p>
-          </section>
+                            <span class="home__information">
+                                <i class='bx bx-envelope home__icon'></i> francojzini@gmail.com
+                            </span>
+
+                            <span class="home__information">
+                                <i class='bx bx-phone home__icon'></i> 0379-4142544
+                            </span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Theme change-button -->
+
+                <!-- Button to generate and download the pdf. Available for desktop. -->
+
+                <!--========== SOCIAL ==========-->
+                <section class="social section">
+                    <p>social</p>
+                </section>
+
+                <!--========== PROFILE ==========-->
+                <section class="profile section" id="profile">
+                    <p>profile</p>
+                </section>
+
+                <!--========== EDUCATION ==========-->
+                <section class="education section" id="education">
+                    <p>education</p>
+                </section>
+
+                <!--========== SKILLS  ==========-->
+                <section class="skills section" id="skills">
+                    <p>skilss</p>
+                </section>
+            </div>
+
+            <div class="resume__right">
+                <!--========== EXPERIENCE ==========-->
+                <section class="experience section" id="experience"></section>
+
+                <!--========== CERTIFICATES ==========-->
+                <section class="certificate section" id="certificates"></section>
+
+                <!--========== REFERENCES ==========-->
+                <section class="references section" id="references"></section>
+
+                <!--========== LANGUAGES ==========-->
+                <section class="languages section"></section>
+
+                <!--========== INTERESTS ==========-->
+                <section class="interests section"></section>
+            </div>
         </div>
-
-        <div class="resume__right">
-          <!--========== EXPERIENCE ==========-->
-          <section class="experience section" id="experience"></section>
-
-          <!--========== CERTIFICATES ==========-->
-          <section class="certificate section" id="certificates"></section>
-
-          <!--========== REFERENCES ==========-->
-          <section class="references section" id="references"></section>
-
-          <!--========== LANGUAGES ==========-->
-          <section class="languages section"></section>
-
-          <!--========== INTERESTS ==========-->
-          <section class="interests section"></section>
-        </div>
-      </div>
     </main>
 
     <!--========== SCROLL TOP ==========-->
@@ -144,5 +158,6 @@
 
     <!--========== MAIN JS ==========-->
     <script src="assets/js/main.js"></script>
-  </body>
+</body>
+
 </html>
