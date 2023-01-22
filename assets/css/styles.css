@@ -131,6 +131,7 @@ img{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 15px;
 }
 
 @media screen and (max-width: 968px) {
@@ -194,6 +195,9 @@ img{
 
 /* Active menu link */
 
+.active-link-highlight {
+  color: black;
+}
 
 /*========== HOME ==========*/
 
