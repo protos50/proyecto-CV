@@ -1,2 +1,3 @@
 # proyecto-CV
-Design a Curriculum VItae using HTML, CSS and JS
+Design of a Curriculum Vitae using HTML, CSS and JS. 
+It has a dark/light switch theme button
