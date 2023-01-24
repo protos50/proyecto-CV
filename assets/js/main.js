@@ -1,3 +1,8 @@
+/* Generador de PDF apartir de documentos HTML --> https://www.html2pdf.co.uk/
+ * 
+ */ 
+
+
 // The showMenu function allows us to toggle between display and hide the nav-menu
 
 const showMenu = (toggleId, navId) => {      //1er. param. el elem. con el event; 2do param. el elem. HTML al cual se agrega la clase show-menu
@@ -97,39 +102,47 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
 
-/*==================== REDUCE THE SIZE AND PRINT ON AN A4 SHEET ====================*/ 
+/******************** REDUCE THE SIZE AND PRINT ON AN A4 SHEET ********************/ 
 function scaleCv() {
     document.body.classList.add('scale-cv');
 }
 
-/*==================== REMOVE THE SIZE WHEN THE CV IS DOWNLOADED ====================*/ 
+/*************** Eliminar el escalado del documento luego de haberse descargado *********************/ 
 function removeScale() {
     document.body.classList.remove('scale-cv');
 }
 
-/*==================== GENERATE PDF ====================*/ 
-// PDF generated area
+/******************* Generacion del PDF ********************/ 
+// Area a mostrar en el PDF generado
 let areaCv = document.getElementById('area-cv');
 
+// Obtener el boton para generar el PDF
 let resumeButton = document.getElementById('resume-button');
 
 
-// Html2pdf options
+// Html2pdf optiones personalizadas sacadas de la Documentacion de la API.
+var opt = {
+    margin:       0,
+    filename:     'myfile.pdf',
+    image:        { type: 'jpeg', quality: 1.00 },
+    html2canvas:  { scale: 4 },
+    jsPDF:        { unit: 'mm', format: "a4"/*[210 , 443]*/, orientation: 'portrait' }
+  };
 
-
-// Function to call areaCv and Html2Pdf options 
+// La funcion generateResume llama a la funcion de la API html2pdf para generar un PDF del area 
+// que es pasado como primer parametro, junto con las opciones personalizadas como segundo parametro
 function generateResume() {
-    html2pdf(areaCv);
+    html2pdf(areaCv, opt);
 }
 
-// When the button is clicked, it executes the three functions
+// Cuando el boton de descargar el pdf es clickeado se ejecuta una secuencia de tres funciones
 resumeButton.addEventListener('click', () => {
-    // 1. The class .scale-cv is added to the body, where it reduces the size of the elements
+    // 1. Se agrega la clase 'scale-cv' al body, escalando todos los elementos
     scaleCv();
 
-    // 2. The PDF is generated
-generateResume();
+    // 2. Generar el PDF
+    generateResume();
 
-    // 3. The .scale-cv class is removed from the body after 5 seconds to return to normal size.
-
+    // 3. La clase 'scale-cv' se quita del body al pasar 3.5s de haberse realizado el escalado
+    setTimeout(removeScale, 3500);
 })

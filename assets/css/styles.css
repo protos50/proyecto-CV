@@ -84,7 +84,6 @@ body.scale-cv {
 
 /*========== Generate PDF button ==========*/
 .generate-pdf {
-  /* display: none; */
   position: absolute;
   top: 2.2rem;
   left: 0;
@@ -100,8 +99,16 @@ body.scale-cv {
 
 /*========== Classes modified to reduce size and print on A4 sheet ==========*/
 .scale-cv .change-theme,
-.scale.cv .generate-pdf {
+.scale-cv .generate-pdf {
   display: none;
+}
+
+.scale-cv h2{
+  margin: 0;
+}
+
+.scale-cv h3{
+  margin: 0;
 }
 
 .scale-cv .bd-container {
@@ -109,7 +116,7 @@ body.scale-cv {
 }
 
 .scale-cv .section {
-  padding: 1.5rem 0 .8rem;
+  padding: 0;
 }
 
 .scale-cv .section-title {
@@ -118,12 +125,12 @@ body.scale-cv {
 
 .scale-cv .resume__left,
 .scale-cv .resume__right {
-  padding: 0 1rem;
+  padding: 0.5rem 1rem;
 }
 
 .scale-cv .home__img {
   width: 90px;
-  height: 100px;
+  height: 105px;
 }
 
 .scale-cv .home__container {
@@ -149,6 +156,15 @@ body.scale-cv {
 .scale-cv .experience__container,
 .scale-cv .certificate__container {
   grid-area: 1rem;
+  gap: 0rem;
+}
+
+.scale-cv .references__container {
+  gap: 0rem;
+}
+
+.scale-cv .references__content {
+  margin: 0rem;
 }
 
 .scale-cv .education__time,
@@ -238,7 +254,7 @@ img {
 
 .bd-grid {
   display: grid;
-  gap: 1.45rem;
+  gap: 1rem;
 }
 
 .l-header {
