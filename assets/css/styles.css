@@ -6,12 +6,12 @@
   --header-height: 3rem;
 
   /*========== Colors ==========*/
-  --title-color: #0b0a0a;
-  --text-color: #403a3a;
-  --text-color-light: #707070;
-  --container-color: #fafafa;
-  --container-color-alt: #f0efef;
-  --body-color: #fcfcfc;
+  --title-color: #190f1d;
+  --text-color: #291b33;
+  --text-color-light: #817d85;
+  --container-color: #f7f2ec;
+  --container-color-alt: #eee8e2;
+  --body-color: #f5f1ed;
 
   /*========== Font and typography ==========*/
   --body-font: "Poppins", sans-serif;
@@ -49,11 +49,11 @@ html {
 
 /*========== Variables Dark theme ==========*/
 body.dark-theme {
-  --title-color: #F2F2F2;
-  --text-color: #BFBFBF;
-  --container-color: #212121;
-  --container-color-alt: #181616;
-  --body-color: #2B2B2B;
+  --title-color: #eceee8;
+  --text-color: #ced1c8;
+  --container-color: #0d1124;
+  --container-color-alt: #0a0c18;
+  --body-color: #171727;
 }
 
 /*========== Button Dark/Light ==========*/
@@ -392,7 +392,7 @@ img {
   color: var(--title-color);
   padding: 1rem 2rem;
   border-radius: 0.25rem;
-  transition: 0.3s;
+  transition: 0.333s;
   font-weight: var(--font-medium);
 }
 
@@ -453,7 +453,7 @@ img {
 .experience__line {
   display: block;
   width: 2px;
-  height: 108%;
+  height: 106%;
   background-color: var(--text-color-light);
   transform: translate(7px, 0);
 }
