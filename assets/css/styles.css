@@ -195,8 +195,13 @@ body.scale-cv {
   margin-bottom: var(--mb-1);
 }
 
+.scale-cv .skills__content
 .scale-cv .interests__container{
   column-gap: 3.5rem;
+}
+
+.scale-cv .skills__data {
+  margin: 0;
 }
 
 body {
@@ -245,6 +250,8 @@ img {
 }
 
 /*========== LAYOUT ==========*/
+
+
 .bd-container {
   max-width: 968px;
   width: calc(100% - 3rem);
@@ -505,6 +512,9 @@ img {
   margin-right: 0.7rem;
 }
 
+.skills.section {
+  padding-bottom: 0;
+}
 /*========== CERTIFICATES ==========*/
 .certificate__title {
   font-size: var(--h3-font-size);
@@ -634,12 +644,12 @@ img {
   }
 
   .languages__content {
-    grid-template-columns: repeat(3, max-content);
-    column-gap: 3.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2.5rem;
   }
 
   .interests__container {
     grid-template-columns: repeat(4, max-content);
-    column-gap: 3.5rem;
+    column-gap: 3rem;
   }
 }
