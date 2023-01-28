@@ -234,9 +234,8 @@ img {
   height: auto;
 }
 
-/*========== CLASS CSS ==========*/
 .section {
-  padding: 1.5rem 0;
+  padding: 1rem 0;
 }
 
 .section-title {
@@ -249,7 +248,7 @@ img {
   margin-bottom: var(--mb-3);
 }
 
-/*========== LAYOUT ==========*/
+/************** LAYOUT **************/
 
 
 .bd-container {
@@ -274,7 +273,7 @@ img {
   box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.2);
   transition: 0.3s;
 }
-/*========== NAV ==========*/
+/************** NAV **************/
 .nav {
   height: var(--header-height);
   display: flex;
@@ -373,11 +372,6 @@ img {
   font-size: var(--h1-font-size);
 }
 
-.home_profession {
-  font-size: var(--normal-font-size);
-  margin-bottom: var(--mb-1);
-}
-
 .home_addres {
   gap: 1rem;
 }
@@ -431,8 +425,9 @@ img {
 }
 
 /*========== PROFILE ==========*/
-.profile__descrition {
-  text-align: center;
+.profile__description {
+  text-align: left;
+  font-size: 0.8rem;
 }
 /*========== EDUCATION AND EXPERIENCE ==========*/
 .education__content,
@@ -457,12 +452,16 @@ img {
 }
 
 .education__line,
-.experience__line {
+.experience__line{
   display: block;
   width: 2px;
-  height: 106%;
+  height: 100%;
   background-color: var(--text-color-light);
   transform: translate(7px, 0);
+}
+
+.experience__line {
+  height: 80%;
 }
 
 .education__data,
@@ -649,7 +648,7 @@ img {
   }
 
   .interests__container {
-    grid-template-columns: repeat(4, max-content);
+    grid-template-columns: repeat(5, max-content);
     column-gap: 3rem;
   }
 }
