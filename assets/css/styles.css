@@ -6,12 +6,12 @@
   --header-height: 3rem;
 
   /*========== Colors ==========*/
-  --title-color: #0b0a0a;
-  --text-color: #403a3a;
-  --text-color-light: #707070;
-  --container-color: #fafafa;
-  --container-color-alt: #f0efef;
-  --body-color: #fcfcfc;
+  --title-color: #190f1d;
+  --text-color: #291b33;
+  --text-color-light: #817d85;
+  --container-color: #f7f2ec;
+  --container-color-alt: #eee8e2;
+  --body-color: #f5f1ed;
 
   /*========== Font and typography ==========*/
   --body-font: "Poppins", sans-serif;
@@ -49,11 +49,11 @@ html {
 
 /*========== Variables Dark theme ==========*/
 body.dark-theme {
-  --title-color: #F2F2F2;
-  --text-color: #BFBFBF;
-  --container-color: #212121;
-  --container-color-alt: #181616;
-  --body-color: #2B2B2B;
+  --title-color: #eceee8;
+  --text-color: #ced1c8;
+  --container-color: #0d1124;
+  --container-color-alt: #0a0c18;
+  --body-color: #171727;
 }
 
 /*========== Button Dark/Light ==========*/
@@ -195,8 +195,13 @@ body.scale-cv {
   margin-bottom: var(--mb-1);
 }
 
+.scale-cv .skills__content
 .scale-cv .interests__container{
   column-gap: 3.5rem;
+}
+
+.scale-cv .skills__data {
+  margin: 0;
 }
 
 body {
@@ -229,9 +234,8 @@ img {
   height: auto;
 }
 
-/*========== CLASS CSS ==========*/
 .section {
-  padding: 1.5rem 0;
+  padding: 1rem 0;
 }
 
 .section-title {
@@ -244,7 +248,9 @@ img {
   margin-bottom: var(--mb-3);
 }
 
-/*========== LAYOUT ==========*/
+/************** LAYOUT **************/
+
+
 .bd-container {
   max-width: 968px;
   width: calc(100% - 3rem);
@@ -267,7 +273,7 @@ img {
   box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.2);
   transition: 0.3s;
 }
-/*========== NAV ==========*/
+/************** NAV **************/
 .nav {
   height: var(--header-height);
   display: flex;
@@ -366,11 +372,6 @@ img {
   font-size: var(--h1-font-size);
 }
 
-.home_profession {
-  font-size: var(--normal-font-size);
-  margin-bottom: var(--mb-1);
-}
-
 .home_addres {
   gap: 1rem;
 }
@@ -392,7 +393,7 @@ img {
   color: var(--title-color);
   padding: 1rem 2rem;
   border-radius: 0.25rem;
-  transition: 0.3s;
+  transition: 0.333s;
   font-weight: var(--font-medium);
 }
 
@@ -424,8 +425,9 @@ img {
 }
 
 /*========== PROFILE ==========*/
-.profile__descrition {
-  text-align: center;
+.profile__description {
+  text-align: left;
+  font-size: 0.8rem;
 }
 /*========== EDUCATION AND EXPERIENCE ==========*/
 .education__content,
@@ -450,12 +452,16 @@ img {
 }
 
 .education__line,
-.experience__line {
+.experience__line{
   display: block;
   width: 2px;
-  height: 108%;
+  height: 100%;
   background-color: var(--text-color-light);
   transform: translate(7px, 0);
+}
+
+.experience__line {
+  height: 80%;
 }
 
 .education__data,
@@ -505,6 +511,9 @@ img {
   margin-right: 0.7rem;
 }
 
+.skills.section {
+  padding-bottom: 0;
+}
 /*========== CERTIFICATES ==========*/
 .certificate__title {
   font-size: var(--h3-font-size);
@@ -634,12 +643,12 @@ img {
   }
 
   .languages__content {
-    grid-template-columns: repeat(3, max-content);
-    column-gap: 3.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2.5rem;
   }
 
   .interests__container {
-    grid-template-columns: repeat(4, max-content);
-    column-gap: 3.5rem;
+    grid-template-columns: repeat(5, max-content);
+    column-gap: 3rem;
   }
 }
